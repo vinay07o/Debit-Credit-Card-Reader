@@ -1,0 +1,41 @@
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="../static/index.css"> 
+    <style>
+    body {
+      background-image: url('https://wallpaperaccess.com/full/1398313.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+        }
+    </style>
+
+
+	</head>
+	
+	<body>
+
+        <form enctype='multipart/form-data' method="POST" >
+          <img src="https://www.yash.com/campaign/images/yash-wh-logo.png" style="vertical-align:top">
+          <img src="https://t3.ftcdn.net/jpg/02/83/11/98/360_F_283119894_mLNOGra7Lv1jv31LjNslTKmrSp8FH5eu.jpg" style="float:right">
+            <center><h2>YASH TECHNOLOGIES</h2></center>
+            <label for="name">Upload the Debit or Credit card Image:</label>
+            
+            {{form.hidden_tag()}}
+            {{form.file()}}
+
+          <center><input class="file_submit" type="Submit"></center>
+        
+        </form>
+        
+        
+        
+        <br>
+        <br>
+        <br>
+
+
+    </body>
+
+</html>

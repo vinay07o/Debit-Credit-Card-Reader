@@ -1,0 +1,50 @@
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="../static/index.css"> 
+        <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/1398313.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            }
+        </style>
+
+
+	</head>
+	
+	<body>
+
+        <form class="grid" action="/result" method="POST">
+            <img src="https://t3.ftcdn.net/jpg/02/83/11/98/360_F_283119894_mLNOGra7Lv1jv31LjNslTKmrSp8FH5eu.jpg" style="float:right">
+
+        <center>
+            <h3>File Uploaded Sucessfully and Here is the card Details</h3>
+        </center>
+
+        <table>
+        {% for key, value in result.items() %}
+            <tr>
+                <th> {{ key }} </th>
+                <td> {{ value }} </td>
+            </tr>
+        {% endfor %}
+        </table>
+
+
+        <center><botton><a href="/">Home</a></botton><center>
+        <h3 style="text-align:right;">Powered by</h3>
+        <h3 style="text-align:right;">Yash Technologies</h3>
+        
+
+        </form>
+               
+        <br>
+        <br>
+        <br>
+
+
+    </body>
+
+</html>
